@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TovReek VCM-01 - 短影音數據管理與成效分析工具。">
+  <title>TovReek VCM-01 | Video Creator Manager</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      color: #eef2ff;
+      background: #090b1b;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1080px, 90%);
+      margin: auto;
+    }
+
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      background: linear-gradient(90deg, #9de8ff, #a98bff);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      color: #b8bfd9;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 110px 0 100px;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at 20% 20%, rgba(79,180,255,.18), transparent 45%),
+        radial-gradient(ellipse at 80% 30%, rgba(135,78,255,.22), transparent 45%);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 15px;
+      border: 1px solid rgba(157,232,255,.3);
+      border-radius: 30px;
+      color: #a8e8ff;
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 70px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+      background: linear-gradient(100deg, #a4edff, #b8a0ff, #e1c5ff);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto;
+      color: #b7bfd8;
+      font-size: 17px;
+    }
+
+    .version {
+      margin-top: 30px;
+      color: #8190b5;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+
+    section {
+      padding: 75px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .section-desc {
+      text-align: center;
+      color: #9ca8c8;
+      margin-bottom: 45px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .feature {
+      padding: 28px;
+      border-radius: 16px;
+      background: linear-gradient(145deg, #151a36, #111329);
+      border: 1px solid rgba(166,180,255,.12);
+    }
+
+    .feature h3 {
+      color: #b9caff;
+      margin-bottom: 12px;
+      font-size: 19px;
+    }
+
+    .feature p {
+      color: #9ca8c8;
+      font-size: 14px;
+    }
+
+    .about {
+      background: #101329;
+      border-top: 1px solid rgba(255,255,255,.06);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+
+    .about-content {
+      max-width: 760px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-content p {
+      color: #aab4d0;
+      margin-top: 18px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 22px;
+      color: #a8e8ff;
+      border-bottom: 1px solid #a8e8ff;
+    }
+
+    footer {
+      padding: 30px 0;
+      text-align: center;
+      color: #7682a5;
+      border-top: 1px solid rgba(255,255,255,.08);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: #a8c9ff;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 700px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 80px 0;
+      }
+
+      .nav-links {
+        gap: 12px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#">TovReek.</a>
+      <div class="nav-links">
+        <a href="#features">功能介紹</a>
+        <a href="#about">關於我們</a>
+        <a href="#contact">聯絡方式</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container">
+      <span class="tag">CREATOR DATA INTELLIGENCE</span>
+
+      <h1>TovReek VCM-01</h1>
+
+      <p>
+        為創作者打造的短影音數據管理工具。
+        記錄每一次發布，追蹤每一次成長，
+        讓數據成為創作決策的依據。
+      </p>
+
+      <div class="version">
+        VIDEO CREATOR MANAGER · VCM-01
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="container">
+      <h2 class="section-title">產品功能</h2>
+      <p class="section-desc">
+        從數據紀錄開始，建立自己的內容成長資料庫。
+      </p>
+
+      <div class="features">
+
+        <article class="feature">
+          <h3>01. 數據管理</h3>
+          <p>
+            整理 TikTok 帳號與影片資料，
+            集中管理觀看、留言、分享等指標。
+          </p>
+        </article>
+
+        <article class="feature">
+          <h3>02. 歷史追蹤</h3>
+          <p>
+            保存不同時間點的數據快照，
+            觀察影片表現與帳號成長變化。
+          </p>
+        </article>
+
+        <article class="feature">
+          <h3>03. 成效分析</h3>
+          <p>
+            透過歷史資料整理與視覺化，
+            協助創作者理解內容表現。
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <h2 class="section-title">關於 TovReek</h2>
+
+        <p>
+          TovReek 致力於探索創作、數據與科技的結合。
+          我們希望讓創作者不只依靠直覺，
+          也能透過長期累積的數據理解自己的內容。
+        </p>
+
+        <p>
+          TovReek VCM-01 是這個方向的第一個產品。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact">
+      <h2 class="section-title">聯絡我們</h2>
+      <p class="section-desc">
+        如有產品或合作相關問題，歡迎聯絡。
+      </p>
+
+      <a href="mailto:fumiyack0628@gmail.com">
+        fumiyack0628@gmail.com
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 TovReek. All rights reserved.</p>
+    <p>
+      <a href="privacy.html">隱私權政策 Privacy Policy</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
